@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+/* Define um conjunto de regras para todos os elementos HTML */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    box-sizing: border-box; /* Garante que a largura/altura inclui bordas e preenchimento */
+    list-style: none; /* Remove marcadores de lista padrão */
+    border: none; /* Remove bordas padrão */
+    text-decoration: none; /* Remove decorações de texto padrão, como sublinhado em links */
+    font-family: 'Roboto', sans-serif; /* Define uma fonte padrão para todos os elementos */
+}
+
+/* Define estilos para o elemento HTML raiz */
+html {
+    width: 100vw; /* Largura igual à largura da janela de visualização */
+    height: 100vh; /* Altura igual à altura da janela de visualização */
+    font-size: 62.5%; /* Tamanho da fonte padrão, equivalente a 10 pixels (1rem = 10px) */
+    overflow-x: hidden; /* Oculta a rolagem horizontal da janela de visualização */
+}
+
+
+/* MENU */
+
+/* Estilo para o contêiner principal */
+.content {
+    width: 100vw; /* Largura igual à largura da janela */
+    height: 70px; /* Altura de 70 pixels */
+    display: flex;
+    justify-content: space-around; /* Espaço uniforme entre os elementos internos */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #1f1e1f; /* Cor de fundo */
+    position: fixed; /* Posição fixa na janela de visualização */
+    padding-left: 30rem; /* Espaço à esquerda de 30rem */
+}
+
+/* Estilo para o logotipo */
+.logo {
+    width: 50px; /* Largura fixa do logotipo */
+    height: auto; /* Altura automática para manter a proporção */
+    cursor: pointer; /* Cursor de apontador ao passar o mouse */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estilo para o título do logotipo */
+.logo h3 {
+    color: white; /* Cor do texto branca */
+    font-size: 1.6rem; /* Tamanho da fonte */
+}
+
+/* Estilo para a imagem do logotipo */
+.logo img {
+    width: 100%; /* Largura de 100% para preencher o espaço */
+    height: 100%; /* Altura de 100% para preencher o espaço */
+}
+
+/* Estilo para a lista de menu */
+.content .list-menu {
+    width: 600px; /* Largura fixa da lista de menu */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaço uniforme entre os itens de menu */
+}
+
+/* Estilo para os itens de menu */
+.content .list-menu li a {
+    padding: 3rem 2rem 1rem 1rem; /* Espaçamento interno */
+    color: white; /* Cor do texto branca */
+    font-size: 1.8rem; /* Tamanho da fonte */
+    text-transform: uppercase; /* Transformação de texto para maiúsculas */
+    font-weight: 500; /* Peso da fonte */
+    transition: all 200ms ease-in; /* Efeito de transição suave */
+}
+
+/* Estilo para os itens de menu ao passar o mouse */
+.content .list-menu li a:hover {
+    background-color: #3333; /* Cor de fundo ao passar o mouse */
+    border-bottom: 4px solid #ffc506; /* Borda inferior ao passar o mouse */
+    color: #ffc506; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo para a primeira seção */
+.first-section {
+    height: 100vh; /* Altura igual à altura da janela de visualização */
+    background-image: linear-gradient(rgba(29,29,29,0.8),rgba(29,29,29,0.8)),url(./img/background.png); /* Imagem de fundo */
+    background-position: center center; /* Posição do plano de fundo */
+    background-size: cover; /* Tamanho do plano de fundo */
+    background-repeat: no-repeat; /* Repetição do plano de fundo */
+    width: 100vw; /* Largura igual à largura da janela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+/* Estilo para o conteúdo principal da primeira seção */
+.first-section .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+}
+
+/* Estilo para o título da primeira seção */
+.first-section h1 {
+    color: #ffc506; /* Cor do texto amarelo */
+    font-size: 6rem; /* Tamanho da fonte */
+    text-transform: uppercase; /* Transformação de texto para maiúsculas */
+    margin-bottom: 1rem; /* Margem inferior */
+}
+
+/* Estilo para o subtítulo da primeira seção */
+.first-section h2 {
+    color: rgb(177, 177, 177); /* Cor do texto cinza */
+    font-size: 3rem; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+    text-transform: uppercase; /* Transformação de texto para maiúsculas */
+}
+
+/* Estilo para o botão na primeira seção */
+.btn button {
+    width: 230px; /* Largura do botão */
+    height: 60px; /* Altura do botão */
+    cursor: pointer; /* Cursor de apontador */
+    text-transform: uppercase; /* Transformação de texto para maiúsculas */
+    background-color: #ffc506; /* Cor de fundo amarela */
+    border-radius: 10px; /* Raio da borda */
+    color: black; /* Cor do texto */
+    font-weight: 600; /* Peso da fonte */
+    margin-top: 5rem; /* Margem superior */
+    margin-left: 12rem; /* Margem esquerda */
+    transform: all 400ms ease-in; /* Efeito de transformação */
+}
+
+/* Estilo para o botão ao passar o mouse */
+.btn button:hover {
+    border: 1px solid #ffc506; /* Borda ao passar o mouse */
+    background-color: transparent; /* Cor de fundo transparente */
+    color: #ffc506; /* Cor do texto amarelo ao passar o mouse */
+}
+
+/* Estilo para o contêiner do botão */
+.btn {
+    width: 480px; /* Largura do contêiner do botão */
+    display: flex; /* Exibição flexível */
+}
