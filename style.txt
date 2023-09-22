@@ -46,6 +46,7 @@ html {
 .logo h3 {
     color: white; /* Cor do texto branca */
     font-size: 1.6rem; /* Tamanho da fonte */
+    white-space: nowrap; /* impede a quebra de linha */
 }
 
 /* Estilo para a imagem do logotipo */
@@ -143,4 +144,197 @@ html {
 .btn {
     width: 480px; /* Largura do contêiner do botão */
     display: flex; /* Exibição flexível */
+}
+
+/* Estilo para a seção "Sobre Nós" */
+.sobre-nos {
+    background-color: #1f1e1f; /* Cor de fundo preto escuro */
+    width: 100%; /* Largura ocupando toda a tela */
+    padding-bottom: 5rem; /* Espaço extra na parte inferior */
+    color: white; /* Texto em branco */
+    display: flex; /* Conteúdo disposto em linha horizontal */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+/* Estilo para imagens dentro da seção "Sobre Nós" */
+.sobre-nos img {
+    width: 400px; /* Largura da imagem */
+    height: 400px; /* Altura da imagem */
+    margin-top: 10rem; /* Margem superior grande */
+    margin-left: 10rem; /* Margem esquerda grande */
+    margin-right: 15rem; /* Margem direita grande */
+    border: 2px solid rgb(155,155,155); /* Borda da imagem */
+}
+
+/* Estilo para a classe "main" (não fornecido no código) */
+
+/* Estilo para elementos com a classe "contentsobre" */
+.contentsobre {
+    display: flex; /* Conteúdo disposto em coluna */
+    flex-direction: column; /* Coluna como direção principal */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+/* Estilo para cabeçalhos <h2> dentro da classe "contentsobre" */
+.contentsobre h2 {
+    font-size: 6rem; /* Tamanho grande de fonte */
+    margin-bottom: 1rem; /* Margem inferior pequena */
+}
+
+/* Estilo para parágrafos <p> dentro da classe "contentsobre" */
+.contentsobre p {
+    text-align: center; /* Texto centralizado */
+    font-size: 1.8rem; /* Tamanho da fonte */
+    width: 600px; /* Largura máxima de 600px */
+}
+
+/* Estilo para a seção "Cardápio" */
+.cardapio {
+    width: 100vw; /* Largura total da tela */
+    display: flex; /* Conteúdo disposto em coluna */
+    flex-direction: column; /* Coluna como direção principal */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    background-color: rgba(12, 12, 12, 0.8); /* Cor de fundo com transparência */
+}
+
+/* Estilo para cabeçalhos <h2> dentro da seção "Cardápio" */
+.cardapio h2 {
+    font-size: 5rem; /* Tamanho grande de fonte */
+    color: #e6e6e6; /* Cor do texto */
+    text-transform: uppercase; /* Texto em maiúsculas */
+}
+
+/* Estilo para a classe "itens-cardapio" */
+.itens-cardapio {
+    width: 80%; /* Largura de 90% */
+    margin-top: 2rem; /* Margem superior de 2rem */
+    margin-bottom: 2rem; /* Margem inferior de 2rem */
+    display: grid; /* Conteúdo disposto em grade */
+    grid-template-columns: repeat(auto-fit, minmax(250px,550px)); /* Colunas flexíveis na grade */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 30px; /* Espaço entre os elementos */
+}
+
+
+/* Estilo para elementos com a classe "info" dentro de elementos com a classe "itens-cardapio" */
+.itens-cardapio .info {
+    background-color: rgb(221, 221, 221); /* Cor de fundo cinza claro */
+    border: none; /* Sem borda */
+    display: flex; /* Conteúdo disposto em linha vertical */
+    flex-direction: column; /* Coluna como direção principal */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 1.5rem; /* Espaçamento interno */
+}
+
+/* Estilo para cabeçalhos <h3> dentro de elementos com a classe "info" dentro de elementos com a classe "itens-cardapio" */
+.itens-cardapio .info h3 {
+    font-size: 1.8rem; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    margin-bottom: 1rem; /* Margem inferior */
+    text-decoration: underline; /* Sublinhado */
+}
+
+/* Estilo para cabeçalhos <h4> dentro de elementos com a classe "info" dentro de elementos com a classe "itens-cardapio" */
+.itens-cardapio .info h4 {
+    color: rgb(76, 76, 76); /* Cor do texto */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    margin-bottom: 0.6rem; /* Margem inferior */
+    display: grid; /* Conteúdo disposto em grade */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 470px; /* Largura máxima de 470px */
+    margin-left: 6rem; /* Margem esquerda grande */
+}
+
+/* Estilo para elementos <div> dentro de elementos com a classe "itens-cardapio" */
+.itens-cardapio div {
+    background-color: #5e5252; /* Cor de fundo marrom */
+    box-shadow: 0px 0px 4px 1px; /* Sombra */
+}
+
+/* Estilo para imagens <img> dentro de elementos com a classe "itens-cardapio" */
+.itens-cardapio img {
+    width: 100%; /* Largura de 100% */
+    height: 200px; /* Altura de 200px */
+}
+
+/* Estilo para elementos com a classe "pedir" dentro de elementos com a classe "info" dentro de elementos com a classe "itens-cardapio" */
+.itens-cardapio .info .pedir {
+    width: 200px; /* Largura de 200px */
+    height: 35px; /* Altura de 35px */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    margin-top: 0.5rem; /* Margem superior pequena */
+    background-color: #ffc506; /* Cor de fundo amarela */
+    border-radius: 5px; /* Borda arredondada */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    cursor: pointer; /* Cursor do mouse de mão */
+    color: black; /* Cor do texto */
+    transition: all 200ms ease-in; /* Transição suave de animação */
+}
+
+/* Estilo para elementos com a classe "pedir" quando o mouse está em cima (hover) */
+.itens-cardapio .info .pedir:hover {
+    background-color: #5e5252; /* Cor de fundo marrom */
+    color: white; /* Cor do texto branca */
+}
+
+
+/* Estilo para a seção "Contatos" */
+.contatos {
+    width: 100%; /* Largura ocupando toda a tela */
+    background-color: #1f1e1f; /* Cor de fundo preto escuro */
+    display: flex; /* Conteúdo disposto em coluna */
+    flex-direction: column; /* Coluna como direção principal */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    font-size: 1.8rem; /* Tamanho da fonte */
+    color: white; /* Texto em branco */
+    padding-bottom: 4rem; /* Espaço extra na parte inferior */
+}
+
+/* Estilo para o cabeçalho <h3> dentro da seção "Contatos" */
+.contatos h3 {
+    font-size: 10rem; /* Tamanho grande de fonte */
+    margin-bottom: 3rem; /* Margem inferior grande */
+}
+
+/* Estilo para a classe "contatos-secao" dentro da seção "Contatos" */
+.contatos-secao {
+    width: 650px; /* Largura máxima de 650px */
+    display: flex; /* Conteúdo disposto em linha horizontal */
+    justify-content: space-between; /* Espaço uniforme entre os elementos */
+    font-size: 2rem; /* Tamanho da fonte */
+}
+
+/* Estilo para o elemento <i> dentro da classe "contatos-secao" */
+.contatos-secao i {
+    margin-right: 1rem; /* Margem direita pequena */
+}
+
+/* Estilo para elementos <div> dentro da classe "contatos-secao" */
+.contatos-secao div {
+    cursor: pointer; /* Cursor do mouse de mão */
+    transition: all 200ms ease-in; /* Transição suave de animação */
+}
+
+/* Estilo para elementos <div> quando o mouse está em cima (hover) */
+.contatos-secao div:hover {
+    color: #ffc506; /* Cor do texto amarela */
+}
+
+/* Estilo para o rodapé (footer) */
+footer {
+    height: 25px; /* Altura de 25px */
+    background-color: black; /* Cor de fundo preto */
+    color: white; /* Texto em branco */
+    font-size: 1.4rem; /* Tamanho da fonte */
+    display: flex; /* Conteúdo disposto em linha horizontal */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
 }

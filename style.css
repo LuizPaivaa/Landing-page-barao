@@ -14,6 +14,7 @@ html {
     height: 100vh;
     font-size: 62.5%;
     overflow-x: hidden;
+    background-color: #1f1e1f;
 }
 
 /* MENU */
@@ -37,8 +38,10 @@ html {
     align-items: center;
 }
 .logo h3 {
+    margin-left: 20px;
     color: white;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    white-space: nowrap;
 }
 .logo img {
     width: 100%;
@@ -191,11 +194,11 @@ html {
 }
 
 .itens-cardapio {
-    width: 80%;
+    width: 90%;
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,550px));
+    grid-template-columns: repeat(auto-fit, minmax(150px,350px));
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -305,6 +308,188 @@ footer {
     font-size: 1.4rem;
     display: flex;
     align-items: center;
-    justify-content: center
-;
+    justify-content: center;
+}
+
+@media (max-width: 1300px) {
+    .main {
+        display: block;
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 12%;
+        padding-left: 0px;
+    }
+
+    .sobre-nos img {
+        width: 610px;
+        margin-left: 10px;
+        margin-right: 0px;    
+    }
+
+    .itens-cardapio .info h4 {
+        width: 270px;
+        margin-left: 17px;
+    }
+
+    .logo img {
+        margin-bottom: 20px;
+        margin-left: -80px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .logo h3 {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 934px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 740px){
+    html {
+        font-size: 45%;
+    }
+
+    .logo img {
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .logo h3 {
+        margin-bottom: 0px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+
+    .content .list-menu {
+        display: none;
+    }
+
+    .one,
+    .two,
+    .trhee {
+        width: 80%;
+        height: 2px;
+        background-color: white;
+        margin: 6px auto;
+        transition-duration: 0.5s;
+    }
+
+    .content.on {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(30, 31, 30, 0.8);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content.on .logo {
+        display: none;
+    }
+
+    .content.on .menu-toggle {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .content.on .list-menu {
+        display: block;
+    }
+
+    .content.on .list-menu li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content.on .list-menu li a {
+        font-size: 2.5rem;
+    }
+
+    .content.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .content.on .menu-toggle .one {
+        transform: rotate(45deg) translate(5px, -8px);
+    }
+
+    .content.on .menu-toggle .trhee {
+        transform: rotate(-45deg) translate(20px, -6px);
+    }
+
+    .menu-toggle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .itens-cardapio {
+        grid-template-columns: repeat(2, minmax(50px, 350px));
+    }
+
+    .contatos-secao {
+        display: block;
+        text-align: center;
+        font-size: 2.6rem;
+    }
+
+    .contatos-secao div {
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 600px){
+    .conteudo-principal h1 {
+        width: 500px;
+        text-align: center;
+        font-size: 4rem;
+    }
+    
+    .conteudo-principal h2 {
+        font-size: 2rem;
+    }
+
+    .itens-cardapio {
+        grid-template-columns: repeat(auto-fit, minmax(50px,350px));
+    }
+
+    .sobre-nos img {
+        width: 400px;
+        height: 250px;
+        margin-left: 15px;
+    }
+
+    .sobre-nos p {
+        text-align: center;
+        width: 400px;
+    }
+
+    .contatos-secao {
+        width: 300px;
+    }
+}
+
+@media (max-width: 500px){
+    .btn {
+        margin-left: 75px;
+    }
 }
