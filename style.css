@@ -311,49 +311,169 @@ footer {
     justify-content: center;
 }
 
-@media (max-width: 1300px) {
-    .main {
-        display: block;
+
+/* 4K */ 
+@media (min-width:2048) and (max-width: 2560px) {
+    html{
+        width: 100%;
+        height: 100%;
+        font-size: 70%;
     }
 
-    .content {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 12%;
-        padding-left: 0px;
-    }
-
-    .sobre-nos img {
-        width: 610px;
-        margin-left: 10px;
-        margin-right: 0px;    
-    }
-
-    .itens-cardapio .info h4 {
-        width: 270px;
-        margin-left: 17px;
-    }
-
-    .logo img {
-        margin-bottom: 20px;
-        margin-left: -80px;
-        width: 45px;
-        height: 45px;
+    .logo {
+        width: 100px;
     }
 
     .logo h3 {
-        margin-bottom: 15px;
+        font-size: 4rem;
+    }
+
+    .content {
+        height: 120px;
+        padding-left: 0px;
+    }
+
+    .content .list-menu li a {
+        padding: 0rem 4rem 0rem 4rem;
+        font-size: 3rem;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .btn button{
+        margin-left: 75px;
+        width: 350px;
+        height: 150px;
+        font-size: 25px;
+    }
+
+
+    .sobre-nos img {
+        width: 800px;
+        height: 650px;
+    }
+
+    .contentsobre h2 {
+        font-size: 15rem;
+    }
+    
+    .contentsobre p {
+        font-size: 4rem;
+    }
+
+    .cardapio h2 {
+        margin-top: 17px;
+        font-size: 8rem; 
+    }
+
+    .itens-cardapio {
+        width: 100%; 
+        margin-top: 2rem; 
+        margin-bottom: 2rem; 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(250px,550px)); 
+        gap: 30px; 
+    }
+
+    .itens-cardapio .info h3 {
+        font-size: 2.6rem; 
+    }
+    
+    .itens-cardapio .info h4 {
+        font-size: 2rem; 
+    }
+
+    .itens-cardapio .info .pedir {
+        width: 400px;
+        height: 55px;
+        font-size: 2.5rem;
+    }
+
+    .contatos-secao { 
+        font-size: 3rem;
+    }
+
+    footer {
+        height: 35px;
+        font-size: 1.9rem;
     }
 }
+
+/*1440P*/
+@media (max-width: 1440px) {
+    html{
+        width: 80%;
+        height: 80%;
+        font-size: 70%;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .logo h3 {
+        font-size: 2.5rem;
+    }
+
+    .content .list-menu {
+        width: 100px; /* Largura fixa da lista de menu */
+    }
+
+    .content .list-menu li a {
+        padding: 5rem 4rem 3rem 1rem; 
+        font-size: 1.7rem;
+    }
+
+    .sobre-nos {
+        padding-left: 420px;
+    }
+
+    .sobre-nos img {
+        width: 600px;
+        height: 450px;
+    }
+
+    .contentsobre h2 {
+        font-size: 8rem;
+    }
+    
+    .contentsobre p {
+        font-size: 3rem;
+    }
+
+    .contatos {
+        width: 105vw;
+
+    }
+
+    .contatos-secao { 
+        margin-left: 70px;
+        font-size: 3rem;
+    }
+
+    footer {
+        width: 105vw;
+        height: 100%;
+        font-size: 1.6rem;
+    }
+    
+
+
+}
+
+
 
 @media (max-width: 934px) {
     html {
         font-size: 50%;
     }
+    .itens-cardapio {
+        grid-template-columns: repeat(auto-fit, minmax(50px,350px));
+    }
+    
 }
 
-@media (max-width: 740px){
+@media (max-width: 768px){
     html {
         font-size: 45%;
     }
@@ -491,5 +611,21 @@ footer {
 @media (max-width: 500px){
     .btn {
         margin-left: 75px;
+        width: 150px;
+    }
+    html {
+        font-size: 30%;
     }
 }
+
+@media (max-width: 395px){
+    .sobre-nos img {
+        width: 250px;
+        height: auto;
+        margin-left: 60px;
+    }
+    html {
+        font-size: 20%;
+    }
+}
+
