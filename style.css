@@ -312,7 +312,7 @@ footer {
 }
 
 
-@media (max-width: 1438px) {
+@media (max-width: 1300px) {
     .main {
         display: block;
     }
@@ -496,5 +496,34 @@ footer {
 }
 
 @media (max-width: 395px) {
-    
+    html {
+        font-size: 35%;
+    }
+
+    .btn {
+        margin-left: 115px;
+    }
+
+    .sobre-nos img {
+        width: 300px;
+        height: 150px;
+        margin-left: 15px;
+    }
+
+    .sobre-nos p {
+        text-align: center;
+        width: 300px;
+        font-size: 2.6rem;
+    }
+
+    .itens-cardapio .info h4 {
+        width: 270px;
+        font-size: 2.0rem;
+        margin-left: 17px;
+    }
+
+    .logo h3 {
+        font-size: 2.6rem;
+        margin-bottom: 0px;
+    }
 }
