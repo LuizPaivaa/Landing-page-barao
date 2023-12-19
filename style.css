@@ -18,7 +18,6 @@ html {
 }
 
 /* MENU */
-
 .content {
     width: 100vw;
     height: 70px;
@@ -29,6 +28,7 @@ html {
     position: fixed;
     padding-left: 30rem;
 }
+
 /*LOGO*/
 .logo {
     width: 50px;
@@ -187,6 +187,8 @@ html {
     justify-content: center;
     background-color: rgba(12, 12, 12, 0.8);
 }
+
+
 .cardapio h2 {
     font-size: 5rem;
     color: #e6e6e6;
@@ -262,7 +264,6 @@ html {
 }
 
 /*Contatos*/
-
 .contatos {
     width: 100%;
     background-color: #1f1e1f;
@@ -273,6 +274,7 @@ html {
     font-size: 1.8rem;
     color: white;
     padding-bottom: 4rem;
+    margin-top: 70px;
 }
 
 .contatos h3 {
@@ -311,7 +313,7 @@ footer {
     justify-content: center;
 }
 
-@media screen and (max-width: 2560px){
+@media (max-width: 2560px){
     html {
         font-size: 100%;
     }
@@ -425,7 +427,14 @@ footer {
 
 }
 
-@media screen and (max-width: 1994px){
+@media (max-width: 2050px){
+
+    .content .list-menu li a {
+        padding: 4rem 3rem 2rem 3.3rem;
+    } 
+}
+
+@media (max-width: 1994px){
 
     .cardapio {
         height: 212vh;
@@ -437,12 +446,28 @@ footer {
     }
 }
 
-@media screen and (max-width: 1606px) {
+@media (max-width: 1920px){
+    .cardapio {
+        height: 250vh;
+    }
+}
+
+@media (max-width: 1874px){
+
+    .content .list-menu li a {
+        padding: 4rem 2rem 2rem 3.3rem;
+    } 
+}
+
+@media (max-width: 1606px) {
 
     html {
         font-size: 65%;
     }
 
+    .logo { 
+        display: flex;
+    }
     .logo h3 {
         font-size: 1.8rem;
     }
@@ -454,7 +479,7 @@ footer {
 
     .content .list-menu li a {
         margin-left: 70px;
-        padding: 4rem 2rem 1rem 1rem;
+        padding: 0rem 0.5rem 1rem 1rem;
         white-space: nowrap;
     }
 
@@ -480,11 +505,11 @@ footer {
     }
 
     .cardapio {
-        height: 200vh;
+        height: 275vh;
     }
 
     .itens-cardapio .info {
-        width: 250px;
+        width: 380px;
         height: 250px;
     }
 
@@ -493,11 +518,11 @@ footer {
     }
 
     .itens-cardapio div {
-        height: 549px;
+        height: 456px;
     }
 }
 
-@media screen and (max-width: 1550px) {
+@media (max-width: 1550px) {
     html {
         font-size: 70%;
     }
@@ -536,7 +561,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 1430px) {
+@media (max-width: 1430px) {
     html {
         font-size: 70%;
     }
@@ -581,7 +606,7 @@ footer {
     }
 
     .cardapio {
-        height: 100vh;
+        height: 170vh;
         padding-top: 15px;
     }
 
@@ -641,21 +666,48 @@ footer {
     }
 }
 
-@media screen and (max-width:1197px) {
-    
-    .itens-cardapio {
-        width: 50%;
-        height: 50%;
+@media (max-width: 1198px) {
+    .cardapio {
+        height: 265vh;
+        margin-top: 0px;
+        padding-top: 20px;
     }
 }
 
-@media screen and (max-width: 992px) {
+
+@media (max-width: 992px) {
     html {
         font-size: 50%;
     }
 }
 
-@media screen and (max-width: 768px){
+@media (max-width:850px) {
+    
+    .first-section h1 {
+        font-size: 5rem;
+    }
+    .itens-cardapio .info h4 {
+        width: 80%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 784px) {
+
+    .cardapio {
+        height: 250vh;
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+
+    .itens-cardapio {
+        width: 80%;
+        height: 80%;
+    }
+
+}
+
+@media (max-width: 768px){
     html {
         font-size: 45%;
     }
@@ -759,7 +811,33 @@ footer {
     }
 }
 
-@media screen and (max-width: 600px){
+@media (max-width: 686px) {
+    .cardapio {
+        height: 260vh;
+    }
+
+    .itens-cardapio {
+        width: 70%;
+        height: 70%;
+    }
+
+    .itens-cardapio .info {
+        width: 240px;
+        height: 150px;
+    }
+
+    .itens-cardapio img {
+        width: 240px;
+        height: 150px;
+    }
+
+    .itens-cardapio div {
+        width: 240px;
+        height: 306px;
+    }
+}
+
+@media (max-width: 600px){
     .conteudo-principal h1 {
         width: 500px;
         text-align: center;
@@ -790,41 +868,8 @@ footer {
     }
 }
 
-@media screen and (max-width: 500px){
+@media (max-width: 500px){
     .btn {
         margin-left: 75px;
-    }
-}
-
-@media screen and (max-width: 395px) {
-    html {
-        font-size: 35%;
-    }
-
-    .btn {
-        margin-left: 115px;
-    }
-
-    .sobre-nos img {
-        width: 300px;
-        height: 150px;
-        margin-left: 15px;
-    }
-
-    .sobre-nos p {
-        text-align: center;
-        width: 300px;
-        font-size: 2.6rem;
-    }
-
-    .itens-cardapio .info h4 {
-        width: 270px;
-        font-size: 2.0rem;
-        margin-left: 17px;
-    }
-
-    .logo h3 {
-        font-size: 2.6rem;
-        margin-bottom: 0px;
     }
 }
