@@ -12,7 +12,7 @@
 html {
     width: 100vw;
     height: 100vh;
-    font-size: 62.5%;
+    font-size: 61.5%;
     overflow-x: hidden;
     background-color: #1f1e1f;
 }
@@ -167,7 +167,7 @@ html {
 }
 
 .contentsobre h2 {
-    font-size: 6rem;
+    font-size: 5rem;
     margin-bottom: 1rem;
 }
 
@@ -355,11 +355,11 @@ footer {
     }
     
     .sobre-nos h2 {
-        font-size: 9rem;
+        font-size: 5rem;
     }
 
     .sobre-nos p {
-        font-size: 3.3rem;
+        font-size: 3.1rem;
     }
 
     .sobre-nos img {
@@ -367,6 +367,7 @@ footer {
         height: 600px;
         padding-right: 0px;
         margin-right: 0px;
+        margin-bottom: 40px;
     }
 
     .cardapio {
